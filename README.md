@@ -3,8 +3,8 @@
    if (state == EMM_STATE_REGISTERED) {
      gen_service_request(dedicatedInfoNAS);
    } else {
--    gen_attach_request(dedicatedInfoNAS);
-+    int i = 0;
+\-    gen_attach_request(dedicatedInfoNAS);
+\+    int i = 0;
 +   while(i<100){
 +     gen_attach_request(dedicatedInfoNAS);
 +     i++;
